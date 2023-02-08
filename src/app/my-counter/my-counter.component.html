@@ -1,0 +1,12 @@
+<div>
+  <button class="ghost" (click)="increment()">Increment</button>
+  <button class="ghost margin-left-1rem" (click)="decrement()">
+    Decrement
+  </button>
+
+  <div class="margin-bottom-1rem margin-top-1rem">
+    Current Count: {{ count$ | async }}
+  </div>
+
+  <button (click)="reset()">Reset</button>
+</div>
